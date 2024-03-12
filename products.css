@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-item {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.food-item h2 {
+    margin: 10px 0;
+}
+
+.food-item p {
+    color: #666;
+}
+
+.food-item span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+/* Reset default button styles */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Custom styles for the buy now button */
+  .buy-now-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
