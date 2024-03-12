@@ -1,0 +1,341 @@
+@font-face {
+    font-family: nb;
+    src: url(./assests/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejouice;
+    src: url(./assests/Rejouice-Headline.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+#loader{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #000;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  gap: 10px;
+}
+#loader-h3{
+  font-size: 2vw;
+  font-weight: 2vw;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: #25bc11;
+    position: fixed;
+    z-index: 9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50% -50%);
+}
+#cursor {
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+#page1 video{
+     height:100%;
+     width: 100%;
+     object-fit: cover;
+     position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(172, 255, 47, 0.342); */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+nav{/*height:100px;*/
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    width: 100%;
+   /*background-color: red;*/
+    padding: 2vw 3vw;
+}
+nav h3{
+    font-size: 1.9vw;
+    font-weight: 100;
+}
+
+#page1-content h1{
+ font-family: rejouice;
+ font-size: 10vw;
+ font-weight: 100;
+ line-height: 10vw ;
+ 
+}
+#page1-content h1 span{
+    font-family: rejouice;
+    display: inline-block;
+}
+
+#page2{
+    height: 100vh;
+    width:100%;
+    background:#DDF1A3;
+}
+.order-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: rejouice;
+}
+
+.order-btn:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+ #cards-container {
+    /* background-color: red; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+  }
+  .card {
+    height: 80%;
+    width: 24%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+  }
+ 
+  #card1 {
+    background-image: url(./assests/food1.webp);
+  }
+  #card2 {
+    background-image: url(./assests/food2.webp);
+  }
+  #card3 {
+    background-image: url(./assests/food3.webp);
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease 0.6s;
+  }
+  .overlay h4 {
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: rejouice;
+  }
+  .overlay p {
+    color: #000;
+    font-size: 18px;
+    font-family: rejouice;
+  }
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  .card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+  }
+  #about-us {
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+  }
+  #about-us img {
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  #about-us-in {
+    width: 50%;
+    text-align: center;
+  }
+  #about-us-in h3 {
+    font-family: rejouice;
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #about-us-in p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  #green-div {
+   
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+  }
+  #green-div h4 {
+    font-family: rejouice;
+    width: 45%;
+    line-height: 50px;
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  #green-div img {
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+  }
+    #page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #ddf1a3;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+ 
+  }
+  #page3 > p{
+    font-family: rejouice;
+    font-size: 35px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 45px;
+    text-align: center;
+  }
+  #page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: #95c11e;
+    position: relative;
+    padding :4vw 0 ;
+  }
+  #page4 h1{
+        font-size: 10vw;
+        font-family: rejouice;
+        font-weight: 100;
+        border-bottom: 1px solid black;
+        width:96%;
+        margin-left: 2%;
+  }
+  #swiperdiv{
+     height: 60vh;
+     width: 100%;
+     /* background-color: red; */
+     position: relative;
+     margin-top: -5%;
+  }
+
+  .swiper {
+    width: 120%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19%;
+    object-fit: cover;
+  }
